@@ -1,4 +1,5 @@
-This is my basic learning of python.
+#This is my basic learning of python.
+
 This has some entry level projects as well as Some good projects that are based on python
 
 -Basic Projetcs
