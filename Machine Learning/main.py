@@ -22,7 +22,6 @@ diabetes_Y_predicted = model.predict(diabetes_X_test)
 print("Mean squared error: ", mean_squared_error(diabetes_Y_test, diabetes_Y_predicted))
 print("Weights: ", model.coef_)
 print("Intercept: ", model.intercept_)
-
 # plt.scatter(diabetes_X_test, diabetes_Y_test)
 # plt.plot(diabetes_X_test, diabetes_Y_predicted)
 # plt.show()
