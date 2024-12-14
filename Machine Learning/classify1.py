@@ -4,6 +4,7 @@ from sklearn.neighbors import KNeighborsClassifier
 # load dataset
 iris = datasets.load_iris()
 
+
 features = iris.data
 labels = iris.target
 
@@ -14,5 +15,9 @@ clf = KNeighborsClassifier()
 clf.fit(features, labels)
 
 #testing the classifier
-preds = clf.predict([[5.1, 3.5, 1.4, 0.2]])
+a = float(input("Sepal Length: "))
+b = float(input("Sepal Width: "))
+c = float(input("Petal Length: "))
+d = float(input("Petal Width: "))
+preds = clf.predict([[a, b, c, d]])
 print(preds)
