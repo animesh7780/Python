@@ -69,3 +69,15 @@ feature_importance = pd.DataFrame({
 
 print("\nFeature Importances:")
 print(feature_importance)
+
+#prediciting sales
+new_data = pd.DataFrame({
+    'Price': [932.8],
+    'Discount': [35.82],
+    'Marketing_Spend': [6780.38],
+    'Product_Category': ['Sports'],
+    'Customer_Segment': ['Premium']
+})
+
+predicted_sales = svr_pipeline.predict(new_data)
+print("\nPredicted Sales:", predicted_sales[0])
