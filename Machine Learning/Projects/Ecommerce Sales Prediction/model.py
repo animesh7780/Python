@@ -81,3 +81,4 @@ new_data = pd.DataFrame({
 
 predicted_sales = svr_pipeline.predict(new_data)
 print("\nPredicted Sales:", predicted_sales[0])
+
